@@ -10,7 +10,61 @@ Random random = new();
             if (userInput == "1")
             {
                 Console.WriteLine("You have chosen to roll a dice.");
-                // Code for rolling the dice to be added here
+                Console.WriteLine("Rolling...");
+                int diceRoll = random.Next(1, 7);
+                switch(diceRoll){
+                case 1:
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("[     ]");
+                    Console.WriteLine("[  0  ]");
+                    Console.WriteLine("[     ]");
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("You've rolled 1!");
+                    break;
+                case 2:
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("[  0  ]");
+                    Console.WriteLine("[     ]");
+                    Console.WriteLine("[  0  ]");
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("You've rolled 2!");
+                    break;
+                case 3:
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("[     ]");
+                    Console.WriteLine("[0 0 0]");
+                    Console.WriteLine("[     ]");
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("You've rolled 3!");
+                    break;
+                case 4:
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("[0   0]");
+                    Console.WriteLine("[     ]");
+                    Console.WriteLine("[0   0]");
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("You've rolled 4!");
+                    break;
+                case 5:
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("[0   0]");
+                    Console.WriteLine("[  0  ]");
+                    Console.WriteLine("[0   0]");
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("You've rolled 5!");
+                    break;
+                case 6:
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("[0 0 0]");
+                    Console.WriteLine("[     ]");
+                    Console.WriteLine("[0 0 0]");
+                    Console.WriteLine("[-----]");
+                    Console.WriteLine("You've rolled 6!");
+                    break;
+                default:
+                    Console.WriteLine("Unable to roll a dice.");
+                    break;
+                }
             }
             else if (userInput == "2")
             {
