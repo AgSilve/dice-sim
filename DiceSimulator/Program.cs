@@ -70,7 +70,7 @@ using System;
                 {
                     Console.WriteLine("What do you want to do?");
                     Console.WriteLine("1. Roll a dice or 2. Exit");
-                    string userInput = Console.ReadLine();
+                    string? userInput = Console.ReadLine();
 
                     if (userInput == "1")
                     {
